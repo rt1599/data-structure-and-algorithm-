@@ -18,11 +18,11 @@
 //p(same)~1-(e^-(n^2)/730)
 //therefore formula becomes
 //n~sqrt(2*365log(1/1-p(same)))
+//application
+//basically birthday paradox problem helps to show the importance of collision handling even for small set of keys 
 #include <cmath> 
 #include <iostream> 
 using namespace std; 
-  
-// Returns approximate number of people for a given probability 
 int find(double p) 
 { 
     return ceil(sqrt(2*365*log(1/(1-p)))); 
@@ -32,3 +32,6 @@ int main()
 { 
    cout << find(0.5); 
 }
+//Applications:
+//Birthday Paradox is generally discussed with hashing to show importance of collision handling even for a small set of keys.
+
