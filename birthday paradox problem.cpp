@@ -32,6 +32,4 @@ int main()
 { 
    cout << find(0.5); 
 }
-//Applications:
-//Birthday Paradox is generally discussed with hashing to show importance of collision handling even for a small set of keys.
 
